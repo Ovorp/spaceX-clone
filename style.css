@@ -7,6 +7,12 @@
   font-family: D-DIN-Bold;
   src: url(/font/D-DIN-Bold.woff);
 }
+
+@font-face {
+  font-family: D-DIN-REG;
+  src: url(/font/D-DIN.woff);
+}
+
 body {
   background-color: black;
   color: white;
@@ -43,6 +49,7 @@ header {
 .left-header {
   height: 25px;
   width: 613px;
+  margin-left: 30px;
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
@@ -58,26 +65,27 @@ li {
 }
 
 /* Nav Bar */
-/* #navbar {
+#navbar {
   position: fixed;
   top: 0;
+  right: 50px;
 }
 
 #menuToggle {
   display: block;
   position: relative;
-  top: 50px;
-  left: 50px;
+  top: 49px;
+  left: 10px;
   z-index: 1;
 }
 
 #menuToggle a {
   text-decoration: none;
-  color: #232323;
+  color: white;
 
   transition: color 0.3s ease;
-} */
-/* 
+}
+
 #menuToggle input {
   display: block;
   width: 40px;
@@ -88,17 +96,17 @@ li {
   cursor: pointer;
 
   opacity: 0; /* hide this */
-/* z-index: 2; and place it over the hamburger */
-/* }  */
-/* 
+  z-index: 2; /*and place it over the hamburger  */
+}
+
 #menuToggle span {
   display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
+  width: 16px;
+  height: 2px;
+  margin-bottom: 2px;
   position: relative;
 
-  background: #cdcdcd;
+  background: white;
   border-radius: 3px;
 
   z-index: 1;
@@ -119,8 +127,8 @@ li {
 
 #menuToggle input:checked ~ span {
   opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  transform: rotate(45deg) translate(-1px, 0px);
+  background: white;
 }
 
 #menuToggle input:checked ~ span:nth-last-child(3) {
@@ -134,30 +142,33 @@ li {
 
 #menu {
   position: absolute;
-  width: 300px;
+  width: 18vw;
   height: 100vh;
-  margin: -100px 0 0 -50px;
+  margin: -100px 0 0 -18vw;
   padding: 50px;
   padding-top: 125px;
 
-  background: #ededed;
+  background: black;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
 
   transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
+  transform: translate(100%, 0);
 
-  transition: transform 1s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.8s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
 #menu li {
   padding: 10px 0;
-  font-size: 22px;
+  padding-right: 30px;
+  font-size: 16px;
+  font-family: D-DIN-REG;
+  text-align: right;
 }
 
 #menuToggle input:checked ~ ul {
   transform: none;
-} */
+}
 
 /* first section about starlink  */
 .starlink {
