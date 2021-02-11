@@ -19,7 +19,8 @@ header {
   width: 1400px;
   font-size: 14px;
   position: fixed;
-  justify-content: center;
+  justify-content: flex-start;
+  left: 140px;
   align-items: center;
   display: flex;
 }
@@ -49,7 +50,7 @@ header {
 
 #shop {
   position: fixed;
-  right: 100px;
+  right: 90px;
 }
 
 li {
