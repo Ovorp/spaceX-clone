@@ -189,4 +189,39 @@ li {
   background-size: 100% 140%;
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  align-items: flex-end;
+}
+
+.first {
+  position: relative;
+  height: 198px;
+  width: 520px;
+  left: 150px;
+  bottom: 120px;
+}
+
+.first > p {
+  font-family: D-DIN-REG;
+  font-size: 20px;
+  line-height: 38px;
+}
+
+.first > h2 {
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.first > button {
+  height: 50px;
+  width: 160px;
+  position: relative;
+  background-color: transparent;
+  margin: 50px 0px;
+  color: white;
+  font-size: 14px;
+  font-family: D-DIN-Bold;
+
+  border: white solid 2px;
+  align-content: center;
 }
