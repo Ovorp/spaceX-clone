@@ -96,7 +96,7 @@ li {
   cursor: pointer;
 
   opacity: 0; /* hide this */
-  z-index: 4; /*and place it over the hamburger  */
+  z-index: 6; /*and place it over the hamburger  */
 }
 
 #menuToggle span {
