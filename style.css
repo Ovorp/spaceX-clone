@@ -26,7 +26,7 @@ header {
   font-size: 14px;
   position: fixed;
   justify-content: flex-start;
-  left: 140px;
+  left: 150px;
   align-items: center;
   display: flex;
 }
@@ -35,6 +35,7 @@ header {
   position: fixed;
   display: flex;
 }
+
 /* logo  */
 
 .logo {
@@ -82,21 +83,20 @@ li {
 #menuToggle a {
   text-decoration: none;
   color: white;
-
-  transition: color 0.3s ease;
+  transition: color 0.2s;
 }
 
 #menuToggle input {
   display: block;
   width: 40px;
-  height: 32px;
+  height: 40px;
   position: absolute;
-  top: -7px;
-  left: -5px;
+  top: -15px;
+  left: -15px;
   cursor: pointer;
 
   opacity: 0; /* hide this */
-  z-index: 2; /*and place it over the hamburger  */
+  z-index: 4; /*and place it over the hamburger  */
 }
 
 #menuToggle span {
@@ -109,7 +109,7 @@ li {
   background: white;
   border-radius: 3px;
 
-  z-index: 1;
+  z-index: 4;
 
   transform-origin: 4px 0px;
 
@@ -156,18 +156,29 @@ li {
   transform: translate(100%, 0);
 
   transition: transform 0.8s cubic-bezier(0.77, 0.2, 0.05, 1);
+  z-index: 3;
 }
 
 #menu li {
   padding: 10px 0;
-  padding-right: 30px;
+  margin-right: 30px;
   font-size: 16px;
   font-family: D-DIN-REG;
   text-align: right;
+  border-bottom: 1pt solid #252525;
 }
 
 #menuToggle input:checked ~ ul {
   transform: none;
+}
+
+.cover-screen {
+  background-color: blue;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0.5;
+  z-index: 2;
 }
 
 /* first section about starlink  */
