@@ -29,6 +29,7 @@ header {
   left: 150px;
   align-items: center;
   display: flex;
+  z-index: 7;
 }
 
 .top-header {
@@ -189,20 +190,26 @@ li {
   z-index: 2;
 }
 
-/* first section about starlink  */
-.starlink {
+/* all section css  */
+
+section {
+  box-sizing: border-box;
   height: 100vh;
-  width: 100vw;
+  width: auto;
+  position: relative;
+  z-index: 0;
+}
+
+/* section style  */
+.starlink {
   background-image: url('/img/starlink.png');
   background-size: 100% 140%;
   background-repeat: no-repeat;
   background-position: center;
-  display: flex;
-  align-items: flex-end;
 }
 
 .first {
-  position: relative;
+  position: absolute;
   height: 198px;
   width: 520px;
   left: 150px;
@@ -214,13 +221,12 @@ li {
   font-size: 20px;
   line-height: 38px;
 }
-
-.first > h2 {
+*/ .first > h2 {
   font-size: 48px;
   line-height: 48px;
 }
 
-.first > button {
+button {
   height: 50px;
   width: 160px;
   position: relative;
@@ -231,4 +237,91 @@ li {
   font-family: D-DIN-Bold;
   border: white solid 2px;
   align-content: center;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+button:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transition: all 0.4s;
+  width: 100%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  background: #fff;
+}
+
+button:hover:before {
+  height: 100%;
+}
+
+button:hover:after,
+button:active:after {
+  height: 100%;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 48px;
+  margin-bottom: 20px;
+}
+
+.starship > .first > p,
+.crew-mission-1 > .first > p,
+.dragon-docking > .first > p {
+  font-family: D-DIN-REG;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.starship {
+  background-image: url(/img/Starshipascent.png);
+  background-size: cover;
+}
+
+.crew-mission-1 {
+  background-image: url(/img/crew.png);
+  background-size: cover;
+  background-size: 100% 140%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.crew-mission-1 > .first {
+  bottom: 80px;
+}
+
+.dragon-docking {
+  background-image: url(/img/iss.png);
+  background-size: cover;
+}
+
+.dragon-docking > .first {
+  bottom: 240px;
+}
+
+footer {
+  padding: 20px 0;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  margin: 20px 0px 15px 0px;
+}
+
+footer > ul > li {
+  margin: 0px 20px;
+}
+
+#copyright {
+  font-family: D-DIN-REG;
+  color: #8e8b8e;
 }
