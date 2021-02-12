@@ -56,6 +56,23 @@ header {
   align-items: flex-end;
 }
 
+.left-header > a {
+  color: white;
+  padding-bottom: 3px;
+  text-decoration: none;
+  background-image: linear-gradient(white, white);
+  background-size: 0% 1px;
+  background-position-x: 100%;
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s ease-in-out;
+}
+
+.left-header > a:hover {
+  background-size: 100% 1px;
+  background-position-x: 0%;
+}
+
 #shop {
   position: fixed;
   right: 90px;
