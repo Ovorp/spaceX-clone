@@ -221,7 +221,8 @@ section {
   font-size: 20px;
   line-height: 38px;
 }
-*/ .first > h2 {
+
+.first > h2 {
   font-size: 48px;
   line-height: 48px;
 }
@@ -254,10 +255,6 @@ button:after {
   top: 0;
   left: 0;
   background: #fff;
-}
-
-button:hover:before {
-  height: 100%;
 }
 
 button:hover:after,
